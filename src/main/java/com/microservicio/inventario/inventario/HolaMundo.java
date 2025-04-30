@@ -5,10 +5,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HolaMundo {
-    
+
     @GetMapping("/hello")
     public String sayHello() {
         return "¡Hola, mundo desde Spring Boot!";
+    }
+    @GetMapping("/products")
+    public String listProducts() {
+        return "Lista de productos del inventario (próximamente)";
     }
     
 }
